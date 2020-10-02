@@ -11,11 +11,6 @@
   
   <title>Frontend Mentor | Clipboard landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <main>
@@ -36,27 +31,35 @@
       </header>
     
       <section class="snippets">
-        <h2>Keep track of your snippets</h2>
+        <section class="snippets-header">
+          <h2>Keep track of your snippets</h2>
+        
+          <p>
+            Clipboard instantly stores any item you copy in the cloud, 
+            meaning you can access your snippets immediately on all your 
+            devices. Our Mac and iOS apps will help you organize everything.
+          </p>
+    
+          <img src="images/image-computer.png" alt="">
+        </section>
       
-        <p>
-          Clipboard instantly stores any item you copy in the cloud, 
-          meaning you can access your snippets immediately on all your 
-          devices. Our Mac and iOS apps will help you organize everything.
-        </p>
-  
-        <img src="images/image-computer.png" alt="">
+        <section class="snippets-items">
+          <h3>Quick Search</h3>
+        
+          <p>Easily search your snippets by content, category, web address, application, and more.</p>
+        </section>
       
-        <h3>Quick Search</h3>
+        <section class="snippets-items">
+          <h3>iCloud Sync</h3>
+        
+          <p>Instantly saves and syncs snippets across all your devices.</p>
+        </section>
       
-        <p>Easily search your snippets by content, category, web address, application, and more.</p>
-      
-        <h3>iCloud Sync</h3>
-      
-        <p>Instantly saves and syncs snippets across all your devices.</p>
-      
-        <h3>Complete History</h3>
-      
-        <p>Retrieve any snippets from the first moment you started using the app.</p>
+        <section class="snippets-items">
+          <h3>Complete History</h3>
+        
+          <p>Retrieve any snippets from the first moment you started using the app.</p>
+        </section>
       </section>
     
       <section class="clipboard">
@@ -71,27 +74,35 @@
       </section>
     
       <section class="workflow">
-        <h2>Supercharge your workflow</h2>
-      
-        <p>We’ve got the tools to boost your productivity.</p>
+        <section class="workflow-header">
+          <h2>Supercharge your workflow</h2>
         
-        <img src="images/icon-blacklist.svg" alt="">
-  
-        <h3> Create blacklists</h3>
-      
-        <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+          <p>We’ve got the tools to boost your productivity.</p>
+        </section>
         
-        <img src="images/icon-text.svg" alt="">
-  
-        <h3>Plain text snippets</h3>
-      
-        <p>Remove unwanted formatting from copied text for a consistent look.</p>
+        <section class="workflow-items">
+          <img src="images/icon-blacklist.svg" alt="">
+    
+          <h3> Create blacklists</h3>
         
-        <img src="images/icon-preview.svg" alt="">
-  
-        <h3>Sneak preview</h3>
-      
-        <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+          <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+        </section>
+        
+        <section class="workflow-items">
+          <img src="images/icon-text.svg" alt="">
+    
+          <h3>Plain text snippets</h3>
+        
+          <p>Remove unwanted formatting from copied text for a consistent look.</p>
+        </section>
+        
+        <section class="workflow-items">
+          <img src="images/icon-preview.svg" alt="">
+    
+          <h3>Sneak preview</h3>
+        
+          <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+        </section>
       </section>
   
       <section class="sponsor">
@@ -131,31 +142,28 @@
   
         <div class="xtrainfo">
           <ul>
-            <li>FAQs</li>
-            <li>Contact Us</li>
-            <li>Privacy Policy</li>
-            <li>Press Kit</li>
-            <li>Install Guide</li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Press Kit</a></li>
+            <li><a href="#">Install Guide</a></li>
           </ul>
         </div>
         
         <div class="social-icons">
           <ul>
-            <li>
+            <li class="facebook">
               <a href="#">
-                <!-- <i class="fab fa-facebook-f"></i> -->
                 <img src="images/icon-facebook.svg" alt="">
               </a>
             </li>
-            <li>
+            <li class="twitter">
               <a href="#">
-                <!-- <i class="fab fa-twitter"></i> -->
                 <img src="images/icon-twitter.svg" alt="">
               </a>
             </li>
-            <li>
+            <li class="instagram">
               <a href="#">
-                <!-- <i class="fab fa-instagram"></i> -->
                 <img src="images/icon-instagram.svg" alt="">
               </a>
             </li>

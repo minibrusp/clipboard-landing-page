@@ -26,6 +26,10 @@ body {
    color: var(--Grayish-Blue);
    text-align: center;
    margin: 0;
+   padding: 0;
+   background-image: url(../images/bg-header-mobile.png);
+   background-repeat: no-repeat;
+   background-size: contain;
 }
 
 h1, 
@@ -39,27 +43,27 @@ p {
 }
 
 main {
-   /* margin: 0 1vw;
-   display: inline-flex;
+   display: flex;
    flex-direction: column;
-   justify-content: center; */
+   justify-content: center;
+   align-items: center;
 
 }
 
 .container {
-   margin: 0 auto;
+   margin: 0 8vw;
    max-width: 375px;
 }
 
-section.snippets > img,
-section.clipboard > img {
+section.snippets img,
+section.clipboard img {
    width: 100%;
 }
 
 .btn-container {
    display: flex;
    flex-direction: column;
-   gap: 10px;
+   margin: 40px 0;
 }
 .btn {
    text-decoration: none;
@@ -69,14 +73,19 @@ section.clipboard > img {
    padding: 15px 40px;
    border-radius: 30px;
    width: 90%;
-   margin: 0 auto;
+   margin: 0 auto 20px auto;
+   /* box-shadow: 0px 7px 8px -5px #565656; */
 }
 
 .btn-container > .btn:nth-child(1){
    background-color: var(--Strong-Cyan);
+   box-shadow: 0px 2px 5px 1px hsl(171deg 59% 29%);
+
+   
 }
 .btn-container > .btn:nth-child(2){
    background-color: var(--Light-Blue);
+   box-shadow: 0px 2px 5px 1px hsl(233deg 31% 41%);
 }
 .btn-container > .btn:nth-child(1):hover,
 .btn-container > .btn:nth-child(2):hover {
@@ -85,31 +94,93 @@ section.clipboard > img {
 
 /* header ----------- */
 
-header img {
-   max-width: 100px;
+header {
+   margin: 100px 0 90px 0;
 }
 
+header h1 {
+   font-size: 1.802rem;
+   max-width: 90vw;
+   margin: 0 auto;
+}
+
+header img {
+   max-width: 120px;
+   margin-bottom: 40px;
+}
+
+
+
 /*  section - snippets  */
+
+section.snippets {
+   margin-bottom: 150px;
+}
+
+section.snippets img {
+   margin: 50px 0px 30px 0px;
+}
+
+.snippets-items {
+   margin: 50px 0px;
+   text-align: unset;
+}
+.snippets-items:nth-of-type(2) {
+   margin-top: 0;
+}
+
 /*  section - clipboard  */
+section.clipboard {
+   margin-bottom: 100px;
+}
+
+section.clipboard img {
+   margin-top: 30px;
+}
+
 /*  section - workflow  */
+section.workflow {
+   margin-bottom: 150px;
+}
+
+.workflow-header {
+   margin-bottom: 70px;
+}
+
+.workflow-items {
+   margin-bottom: 50px;
+}
+
+.workflow-items img {
+   margin: 25px 0;
+}
+
 /*  section - sponsor  */
+section.sponsor {
+   margin-bottom: 150px;
+}
 .sponsor > .img-container {
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 50px;
+   gap: 80px;
 }
 
 .sponsor img {
-   max-width: 165px;
+   max-width: 100%;
 }
 
-/*  section - clipboar2  */
+/*  section - clipboard2  */
+section.clipboard2 {
+   margin-bottom: 150px;
+}
 /*  footer  ------------*/
 
 footer {
    background-color: #F5F6F8;
    margin: 0;
+   width: 100%;
+   padding-top: 50px;
 }
 .ftr-logo img{
    height: 2.887rem;
@@ -118,19 +189,52 @@ footer {
 .xtrainfo li {
    line-height: 2.5;
 }
+.xtrainfo li > a{
+   color: var(--Dark-Grayish-Blue);
+   text-decoration: none;
+}
+.xtrainfo li > a:hover,
+.xtrainfo li > a:focus {
+   text-decoration: underline;
+}
+
+.social-icons {
+   margin: 40px 0 30px 0;
+}
 
 .social-icons > ul {
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: row;
-   gap: 20px;
+   gap: 30px;
 }
+
+.social-icons li.facebook:hover img {
+   filter: brightness(1) sepia(1) hue-rotate(140deg) saturate(7);
+}
+.social-icons li.twitter:hover img {
+   filter: brightness(1.5) sepia(1) hue-rotate(120deg) saturate(5);
+}
+.social-icons li.instagram:hover img {
+   filter: brightness(1) sepia(1) hue-rotate(-70deg) saturate(5);
+}
+
 
 .xtrainfo > ul,
 .social-icons > ul {
    list-style-type: none;
    padding: 0;
+}
+
+.attribution { 
+   text-align: center; 
+}
+.attribution a { 
+   color: hsl(228, 45%, 44%); 
+}
+.attribution a:hover { 
+   background-color: var(--Grayish-Blue);
 }
 
 
