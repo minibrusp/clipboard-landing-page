@@ -396,11 +396,15 @@ footer {
    .comp-itm-container {
       margin-left: -25%;
    }
+}
 
+@media screen and (min-width: 1450px) {
    .ftr-flex-container {
-      grid-template-columns: .5fr 2fr .1fr;
+      grid-template-columns: .1fr 2fr .1fr;
    }
-
+   .xtrainfo {
+      justify-self: center;
+   }
    .xtrainfo ul {
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: 1fr;
