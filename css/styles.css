@@ -52,7 +52,7 @@ main {
 
 .container {
    margin: 0 8vw;
-   max-width: 375px;
+   /* max-width: 375px; */
 }
 
 section.snippets img,
@@ -229,6 +229,7 @@ footer {
 
 .attribution { 
    text-align: center; 
+   font-size: 0.702rem;
 }
 .attribution a { 
    color: hsl(228, 45%, 44%); 
