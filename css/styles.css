@@ -51,7 +51,7 @@ main {
 }
 
 .container {
-   margin: 0 8vw;
+   margin: 0 8%;
    /* max-width: 375px; */
 }
 
@@ -74,7 +74,6 @@ section.clipboard img {
    border-radius: 30px;
    width: 90%;
    margin: 0 auto 20px auto;
-   /* box-shadow: 0px 7px 8px -5px #565656; */
 }
 
 .btn-container > .btn:nth-child(1){
@@ -128,6 +127,7 @@ section.snippets img {
 .snippets-items:nth-of-type(2) {
    margin-top: 0;
 }
+
 
 /*  section - clipboard  */
 section.clipboard {
@@ -195,7 +195,7 @@ footer {
 }
 .xtrainfo li > a:hover,
 .xtrainfo li > a:focus {
-   text-decoration: underline;
+   color: var(--Strong-Cyan);
 }
 
 .social-icons {
@@ -238,4 +238,119 @@ footer {
    background-color: var(--Grayish-Blue);
 }
 
+/*  Media Queries  ------------*/
+
+@media screen and (min-width: 745px) {
+   section.snippets img {
+      width: 597.250px;
+   }
+
+   .comp-itm-container {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      gap: 30px;
+      margin-left: -40%;
+   }
+   .snippets-items {
+      margin-bottom: 20px;
+   }
+}
+
+@media screen and (min-width: 900px) {
+   body {
+      background-image: url(../images/bg-header-desktop.png);
+   }
+   
+   .btn-container {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+   }
+   .btn {
+      max-width: 250px;
+      margin: 0;
+   }
+
+   .comp-itm-container {
+      gap: 50px;
+      margin-left: -30%;
+   }
+
+   .workflow-items-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+   }
+
+   .sponsor .img-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      column-gap: 3vw;
+   }
+
+   footer {
+      margin: 0 8vw;
+      padding: 0;
+   }
+
+   .ftr-flex-container {
+      display: grid;
+      grid-template-columns: .5fr 1.5fr .1fr;
+      justify-items: center;
+      align-items: center;
+      margin: 0px 8vw;
+   }
+
+   .ftr-logo {
+      justify-self: start;
+   }
+
+   .xtrainfo {
+      justify-self: start;
+   }
+
+
+   .xtrainfo ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+         "Faq Privacy Install"
+         "Contact Press Press";
+      justify-items: start;
+      justify-content: start;
+      width: 100%;
+      text-align: left;
+      column-gap: 30px;
+   }
+
+   .xtrainfo li:nth-of-type(1){
+      grid-area: Faq;
+   }
+   .xtrainfo li:nth-of-type(2){
+      grid-area: Contact;
+   }
+   .xtrainfo li:nth-of-type(3){
+      grid-area: Privacy;
+   }
+   .xtrainfo li:nth-of-type(4){
+      grid-area: Press;
+   }
+   .xtrainfo li:nth-of-type(5){
+      grid-area: Install;
+   }
+
+   .social-icons {
+      justify-self: end;
+   }
+
+}
+
+@media screen and (min-width: 1100px) {
+   .comp-itm-container {
+      margin-left: -15%;
+      gap: 80px;
+   }
+}
 
