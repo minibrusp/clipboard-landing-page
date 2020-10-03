@@ -271,10 +271,11 @@ footer {
       width: 690px;
    }
    .snip-itm-container {
-      margin-left: 25px;
+      margin: auto auto auto 25px;
    }
    .snippets-items {
       margin-bottom: 20px;
+      margin-top: 0;
    }
 
    .snippets-items p {
