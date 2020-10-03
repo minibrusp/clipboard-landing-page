@@ -52,7 +52,6 @@ main {
 
 .container {
    margin: 0 8%;
-   /* max-width: 375px; */
 }
 
 section.snippets img,
@@ -242,20 +241,51 @@ footer {
 /*  Media Queries  ------------*/
 
 @media screen and (min-width: 745px) {
-   section.snippets img {
-      width: 597.250px;
+
+   header p,
+   .snippets-header p,
+   section.clipboard p,
+   section.clipboard2 p {
+      margin-right: auto;
+      margin-left: auto;
    }
 
+   header p {
+      width: 615px;
+   }
+   
    .comp-itm-container {
       display: flex;
       justify-content: center;
       text-align: left;
       gap: 25px;
       margin-left: -25%;
+      align-items: center;
+   }
+   section.snippets img {
+      width: 597.250px;
+   }
+
+   .snippets-header p {
+      width: 690px;
    }
    .snippets-items {
       margin-bottom: 20px;
    }
+
+   .snippets-items p {
+      max-width: 398.984px;
+   }
+
+   section.clipboard p {
+      width: 670px;
+   }
+
+   section.clipboard2 p {
+      width: 650px;
+   }
+
+
 }
 
 @media screen and (min-width: 900px) {
@@ -351,7 +381,36 @@ footer {
 @media screen and (min-width: 1100px) {
    .comp-itm-container {
       margin-left: -15%;
+      margin-right: auto;
       gap: 80px;
    }
+   section.snippets {
+      margin-top: 0;
+   }
+   section.snippets img {
+      width: 100%;
+   }
 }
+
+@media screen and (min-width: 1200px) {
+   .comp-itm-container {
+      margin-left: -25%;
+   }
+
+   .ftr-flex-container {
+      grid-template-columns: .5fr 2fr .1fr;
+   }
+
+   .xtrainfo ul {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-areas: 
+      "Faq Contact Privacy Press Install";
+      column-gap: 10px;
+      justify-items: center;
+   }
+}
+
+
+
 
