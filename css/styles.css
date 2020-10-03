@@ -136,6 +136,7 @@ section.clipboard {
 
 section.clipboard img {
    margin-top: 30px;
+   max-width: 750px;
 }
 
 /*  section - workflow  */
