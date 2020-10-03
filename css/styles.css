@@ -163,11 +163,11 @@ section.sponsor {
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 80px;
 }
 
 .sponsor img {
    max-width: 100%;
+   margin-top: 80px;
 }
 
 /*  section - clipboard2  */
@@ -207,7 +207,9 @@ footer {
    justify-content: center;
    align-items: center;
    flex-direction: row;
-   gap: 30px;
+}
+.social-icons li {
+   margin: 0 15px;
 }
 
 .social-icons li.facebook:hover img {
@@ -258,7 +260,6 @@ footer {
       display: flex;
       justify-content: center;
       text-align: left;
-      gap: 25px;
       margin-left: -25%;
       align-items: center;
    }
@@ -268,6 +269,9 @@ footer {
 
    .snippets-header p {
       width: 690px;
+   }
+   .snip-itm-container {
+      margin-left: 25px;
    }
    .snippets-items {
       margin-bottom: 20px;
@@ -296,16 +300,18 @@ footer {
    .btn-container {
       flex-direction: row;
       justify-content: center;
-      gap: 20px;
+      
    }
    .btn {
       max-width: 250px;
-      margin: 0;
+      margin: 0 10px;
    }
 
    .comp-itm-container {
-      gap: 40px;
       margin-left: -20%;
+   }
+   .snip-itm-container {
+      margin-left: 40px;
    }
 
    .workflow-items-container {
@@ -382,8 +388,12 @@ footer {
    .comp-itm-container {
       margin-left: -15%;
       margin-right: auto;
-      gap: 80px;
    }
+   
+   .snip-itm-container {
+      margin-left: 80px;
+   }
+
    section.snippets {
       margin-top: 0;
    }
