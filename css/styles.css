@@ -250,8 +250,8 @@ footer {
       display: flex;
       justify-content: center;
       text-align: left;
-      gap: 30px;
-      margin-left: -40%;
+      gap: 25px;
+      margin-left: -25%;
    }
    .snippets-items {
       margin-bottom: 20px;
@@ -274,8 +274,8 @@ footer {
    }
 
    .comp-itm-container {
-      gap: 50px;
-      margin-left: -30%;
+      gap: 40px;
+      margin-left: -20%;
    }
 
    .workflow-items-container {
